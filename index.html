@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="content">
+      <div class="total">
+        <div class="wrap-title">
+          <span class="total__title">Ваш заказ:</span>
+          <span class="total__number">48 650 руб.</span>
+        </div>
+        <div class="wrap-subtitle">
+          <span class="total__position">40 позиций</span> / 
+          <span class="total__weight">20 кг.</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <div>
+          <span class="info__title">Информация о покупателе</span>
+        </div>
+      </div>
+
+      <div class="info__content">
+        <input class="info__input info__input--company" type="text" placeholder="Название компании *" />
+        <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
+        <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
+        <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
+        <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" />
+        <input class="info__input info__input--email" type="text" placeholder="E-Mail *" />
+        <input class="info__input info__input--phone" type="text" placeholder="Телефон" />
+        <input class="info__input info__input--fax" type="text" placeholder="Факс" />
+        <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" />
+        <input class="info__input info__input--location" type="text" placeholder="Местоположение *" />
+        <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" />
+      </div>
+
+      <div class="delivery">
+        <span class="delivery__title">Доставка</span>
+
+        <div class="delivery__item">
+          <input type="radio" id="delivery-id-1" class="delivery__radio" name="delivery-id" checked>
+          <label for="delivery-id-1" class="delivery__label">
+            <div class="delivery__desc">
+              <span class="delivery__title">Доставка курьером</span>
+              <span class="delivery__subtitle">Доставка осуществляется в течение дня в удобное для вас время.</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="delivery__item">
+          <input type="radio" id="delivery-id-2" class="delivery__radio" name="delivery-id">
+          <label for="delivery-id-2" class="delivery__label">
+            <div class="delivery__desc">
+              <span class="delivery__title">Самовывоз</span>
+              <span class="delivery__subtitle">Вы можете самостоятельно забрать заказ из нашего магазина.</span>
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

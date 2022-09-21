@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #F2F2F8;
+}
+
+.content {}
+.total {
+  /* margin-bottom: 24px; */
+}
+
+.wrap-title {
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.total__title {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.total__number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+}
+
+.wrap-subtitle {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/**/
+.info {
+  padding: 24px 0 12px;
+}
+.info__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.info__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__input {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.info__input--location {
+  background-image: url('./images/search.svg');
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+
+.delivery {
+  margin-top: 16px;
+}
+
+.delivery__radio {
+  display: none;
+}
+
+.delivery__label {
+  display: flex;
+  margin-top: 22px;
+  padding-left: 25px;
+}
+
+.delivery__label::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 0;
+  display: inline-block;
+  border: 2px solid #D4D4D4;
+  border-radius: 50%;
+}
+
+.delivery__radio:checked + .delivery__label::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 9px;
+  left: 7px;
+  border-radius: 50%;
+  background-color: #5F8BE3;
+}
+
+.delivery__radio:checked + .delivery__label::before {
+  border-color: #5F8BE3;
+}
+
+.delivery__item {
+  position: relative;
+  margin-left: 2px;
+}
+
+.delivery__desc {
+  margin-left: 12px;
+}
+
+.delivery__title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.delivery__subtitle {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
