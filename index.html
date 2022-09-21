@@ -11,66 +11,104 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main-container">
-    <div class="content">
-      <div class="total">
-        <div class="wrap-title">
-          <span class="total__title">Ваш заказ:</span>
-          <span class="total__number">48 650 руб.</span>
-        </div>
-        <div class="wrap-subtitle">
-          <span class="total__position">40 позиций</span> / 
-          <span class="total__weight">20 кг.</span>
-        </div>
-      </div>
-
-      <div class="info">
-        <div>
-          <span class="info__title">Информация о покупателе</span>
-        </div>
-      </div>
-
-      <div class="info__content">
-        <input class="info__input info__input--company" type="text" placeholder="Название компании *" />
-        <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
-        <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
-        <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
-        <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" />
-        <input class="info__input info__input--email" type="text" placeholder="E-Mail *" />
-        <input class="info__input info__input--phone" type="text" placeholder="Телефон" />
-        <input class="info__input info__input--fax" type="text" placeholder="Факс" />
-        <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" />
-        <input class="info__input info__input--location" type="text" placeholder="Местоположение *" />
-        <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" />
-      </div>
-
-      <div class="delivery">
-        <span class="delivery__title">Доставка</span>
-
-        <div class="delivery__item">
-          <input type="radio" id="delivery-id-1" class="delivery__radio" name="delivery-id" checked>
-          <label for="delivery-id-1" class="delivery__label">
-            <div class="delivery__desc">
-              <span class="delivery__title">Доставка курьером</span>
-              <span class="delivery__subtitle">Доставка осуществляется в течение дня в удобное для вас время.</span>
-            </div>
-          </label>
+  <form action=""></form>
+    <div class="main-container">
+      <div class="content">
+        <div class="total">
+          <div class="wrap-title">
+            <span class="total__title">Ваш заказ:</span>
+            <span class="total__number">48 650 руб.</span>
+          </div>
+          <div class="wrap-subtitle">
+            <span class="total__position">40 позиций</span> / 
+            <span class="total__weight">20 кг.</span>
+          </div>
         </div>
 
-        <div class="delivery__item">
-          <input type="radio" id="delivery-id-2" class="delivery__radio" name="delivery-id">
-          <label for="delivery-id-2" class="delivery__label">
-            <div class="delivery__desc">
-              <span class="delivery__title">Самовывоз</span>
-              <span class="delivery__subtitle">Вы можете самостоятельно забрать заказ из нашего магазина.</span>
-            </div>
-          </label>
+    
+        <div class="info">
+          <div>
+            <span class="info__title">Информация о покупателе</span>
+          </div>
         </div>
-
+  
+        <div class="info__content">
+          <input class="info__input info__input--company" type="text" placeholder="Название компании *" />
+          <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
+          <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
+          <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
+          <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" />
+          <input class="info__input info__input--email" type="text" placeholder="E-Mail *" />
+          <input class="info__input info__input--phone" type="text" placeholder="Телефон" />
+          <input class="info__input info__input--fax" type="text" placeholder="Факс" />
+          <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" />
+          <input class="info__input info__input--location" type="text" placeholder="Местоположение *" />
+          <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" />
+        </div>
+  
+        <div class="delivery">
+          <span class="delivery__title">Доставка</span>
+          <div class="delivery__item">
+            <input type="radio" id="delivery-id-1" class="delivery__radio" name="delivery-id" checked>
+            <label for="delivery-id-1" class="delivery__label">
+              <div class="delivery__desc">
+                <span class="delivery__title">Доставка курьером</span>
+                <span class="delivery__subtitle">Доставка осуществляется в течение дня в удобное для вас время.</span>
+              </div>
+            </label>
+          </div>
+          <div class="delivery__item">
+            <input type="radio" id="delivery-id-2" class="delivery__radio" name="delivery-id">
+            <label for="delivery-id-2" class="delivery__label">
+              <div class="delivery__desc">
+                <span class="delivery__title">Самовывоз</span>
+                <span class="delivery__subtitle">Вы можете самостоятельно забрать заказ из нашего магазина.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+  
+        <div class="payment">
+          <span class="payment__title">Оплата</span>
+          <div class="payment__item">
+            <input type="radio" id="payment-id-1" class="payment__radio" name="payment-id" checked>
+            <label for="payment-id-1" class="payment__label">
+              <div class="payment__desc">
+                <span class="payment__title">Банковский перевод</span>
+                <span class="payment__subtitle"></span>
+              </div>
+            </label>
+          </div>
+          <div class="payment__item">
+            <input type="radio" id="payment-id-2" class="payment__radio" name="payment-id">
+            <label for="payment-id-2" class="payment__label">
+              <div class="payment__desc">
+                <span class="payment__title">Счёт на оплату</span>
+                <span class="payment__subtitle">Мы отправим вам счет на оплату в течение 15 минут после проверки заказа и резервирования.</span>
+              </div>
+            </label>
+          </div>
+          <div class="payment__item">
+            <input type="radio" id="payment-id-3" class="payment__radio" name="payment-id">
+            <label for="payment-id-3" class="payment__label">
+              <div class="payment__desc">
+                <span class="payment__title">Наложенный платеж</span>
+                <span class="payment__subtitle">Оплата производится в момент получения заказа. Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты заказа.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+  
+        <div class="comment">
+          <span class="comment__title">Комментарий к заказу</span>
+          <textarea id="comment" class="comment__textarea" placeholder="Комментарий"></textarea>
+        </div>
       </div>
     </div>
-  </div>
-
+    <div class="submit-wrap">
+      <input type="submit" value="Оформить заказ" class="order-submit">
+    </div>
+  </form>
 
   <script src="./script.js"></script>
 </body>
