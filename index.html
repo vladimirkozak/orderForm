@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form action=""></form>
+  <form action="/action.php" id="order_form"></form>
     <div class="main-container">
       <div class="content">
         <div class="total">
@@ -25,7 +25,6 @@
           </div>
         </div>
 
-    
         <div class="info">
           <div>
             <span class="info__title">Информация о покупателе</span>
@@ -37,13 +36,13 @@
           <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
           <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
           <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
-          <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" />
-          <input class="info__input info__input--email" type="text" placeholder="E-Mail *" />
+          <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" required />
+          <input class="info__input info__input--email" type="text" placeholder="E-Mail *" required />
           <input class="info__input info__input--phone" type="text" placeholder="Телефон" />
           <input class="info__input info__input--fax" type="text" placeholder="Факс" />
-          <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" />
-          <input class="info__input info__input--location" type="text" placeholder="Местоположение *" />
-          <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" />
+          <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" required />
+          <input class="info__input info__input--location" type="text" placeholder="Местоположение *" required />
+          <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" required />
         </div>
   
         <div class="delivery">
@@ -106,7 +105,10 @@
       </div>
     </div>
     <div class="submit-wrap">
-      <input type="submit" value="Оформить заказ" class="order-submit">
+      <button type="submit" value="Оформить заказ" class="order-submit" form="order_form">
+        Оформить заказ
+        <img src="./images/row.svg" class="order_submit-icon" alt="order_form_icon">
+      </button>
     </div>
   </form>
 

@@ -64,10 +64,18 @@ body {
   padding: 12px 16px;
   font-size: 14px;
   line-height: 20px;
+  color: #212121;
   border-radius: 4px;
   border: none;
   outline: none;
 }
+
+/* for webkit */
+.info__input::-webkit-input-placeholder,
+.comment__textarea::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.4); }
+/* for mozilla */
+.info__input:-moz-placeholder,
+.comment__textarea:-moz-placeholder { color: red; }
 
 .info__input--location {
   background-image: url('./images/search.svg');
@@ -156,7 +164,6 @@ body {
 /**/
 .comment {
   margin-top: 24px;
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -173,8 +180,7 @@ body {
   min-height: 200px;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Ubuntu';
-  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Ubuntu', sans-serif;
   border-radius: 4px;
   resize: none;
   border: none;
@@ -187,11 +193,21 @@ body {
 }
 
 .order-submit {
+  font-family: 'Ubuntu', sans-serif;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
   background-color: #5F8BE3;
   border: none;
+}
+
+.order-submit:disabled { opacity: 0.7; }
+
+.order_submit-icon {
+  margin-left: 9px;
 }
