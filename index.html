@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./itc-custom-select.css">
 </head>
 <body>
-  <form action="/action.php" id="order_form"></form>
+  <form action="/action.php" id="order_form">
     <div class="main-container">
       <div class="content">
         <div class="total">
@@ -47,17 +47,50 @@
         </div>
   
         <div class="info__content">
-          <input class="info__input info__input--company" type="text" placeholder="Название компании *" />
-          <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
-          <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
-          <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
-          <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" required />
-          <input class="info__input info__input--email" type="text" placeholder="E-Mail *" required />
-          <input class="info__input info__input--phone" type="text" placeholder="Телефон" disabled />
-          <input class="info__input info__input--fax" type="text" placeholder="Факс" />
-          <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" required />
-          <input class="info__input info__input--location" type="text" placeholder="Местоположение *" required />
-          <input class="info__input info__input--delivery-address" type="text" placeholder="Адрес доставки *" required />
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--company required" type="text" placeholder="Название компании *" disabled />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--address" type="text" placeholder="Юридический адрес" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--inn" type="text" placeholder="ИНН" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--contact-person required" type="text" placeholder="Контактное лицо *" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--email required" type="text" placeholder="E-Mail *" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--phone" type="text" placeholder="Телефон" disabled />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--fax" type="text" placeholder="Факс" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--postcode required" type="text" placeholder="Индекс *" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--location required" type="text" placeholder="Местоположение *" />
+          </div>
+          <div class="form-control">
+            <span class="form-error">Поле не должно быть пустым</span>
+            <input class="info__input info__input--delivery-address required" type="text" placeholder="Адрес доставки *" />
+          </div>
         </div>
   
         <div class="delivery">
