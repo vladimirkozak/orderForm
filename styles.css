@@ -70,6 +70,11 @@ body {
   outline: none;
 }
 
+.info__input:disabled {
+  background-color: #fff;
+  opacity: 0.4;
+}
+
 /* for webkit */
 .info__input::-webkit-input-placeholder,
 .comment__textarea::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.4); }

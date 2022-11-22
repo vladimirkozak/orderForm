@@ -1,1 +1,1 @@
-//document.querySelector(".order-submit").addEventListener("click", (e) => e.preventDefault());
+const select1 = new ItcCustomSelect('#select-1');

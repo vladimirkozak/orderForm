@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./itc-custom-select.css">
 </head>
 <body>
   <form action="/action.php" id="order_form"></form>
@@ -30,6 +31,20 @@
             <span class="info__title">Информация о покупателе</span>
           </div>
         </div>
+
+        <div class="itc-select" id="select-1">
+          <!-- Кнопка для открытия выпадающего списка -->
+          <button type="button" class="itc-select__toggle" name="car" value="" data-select="toggle" data-index="-1">Выберите организацию</button>
+          <!-- Выпадающий список -->
+          <div class="itc-select__dropdown">
+            <ul class="itc-select__options">
+              <li class="itc-select__option" data-select="option" data-value="Test" data-index="0">Test</li>
+              <li class="itc-select__option" data-select="option" data-value="Test 2" data-index="1">Test 2</li>
+              <li class="itc-select__option" data-select="option" data-value="Test 3" data-index="2">Test 3</li>
+              <li class="itc-select__option" data-select="option" data-value="Test 4" data-index="3">Test 4</li>
+            </ul>
+          </div>
+        </div>
   
         <div class="info__content">
           <input class="info__input info__input--company" type="text" placeholder="Название компании *" />
@@ -38,7 +53,7 @@
           <input class="info__input info__input--kpp" type="text" placeholder="КПП" />
           <input class="info__input info__input--contact-person" type="text" placeholder="Контактное лицо *" required />
           <input class="info__input info__input--email" type="text" placeholder="E-Mail *" required />
-          <input class="info__input info__input--phone" type="text" placeholder="Телефон" />
+          <input class="info__input info__input--phone" type="text" placeholder="Телефон" disabled />
           <input class="info__input info__input--fax" type="text" placeholder="Факс" />
           <input class="info__input info__input--postcode" type="text" placeholder="Индекс *" required />
           <input class="info__input info__input--location" type="text" placeholder="Местоположение *" required />
@@ -112,6 +127,7 @@
     </div>
   </form>
 
+  <script src="./itc-custom-select.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
