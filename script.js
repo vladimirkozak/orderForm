@@ -27,11 +27,13 @@ window.onload = function() {
   });
 
   function checkInputs () {
-    inputRequired.forEach(input => {
+    Array.from(inputRequired).reverse().forEach((input) => {
       if (input.value.trim() || input.hasAttribute('disabled')) {
         setSuccessFor(input);
       } else {
         setErrorFor(input);
+        const formControl = input.parentElement;
+        formControl.scrollIntoView({behavior: 'smooth', block: 'start'});
       }
     });
   }
