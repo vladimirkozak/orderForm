@@ -6,11 +6,14 @@ window.onload = function() {
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    checkInputs();
+    const isValid = checkInputs();
+    if (isValid) {
+      form.submit();
+    }
   });
 
   inputRequired.forEach(input => {
-    input.addEventListener('input', () => {
+    input.addEventListener('blur', () => {
       if (input.value.trim().length) {
         if (input.classList.contains('info__input--email')) {
           const isValid = validateEmail(input.value.trim());
@@ -27,22 +30,24 @@ window.onload = function() {
   });
 
   function checkInputs () {
+    let flag = true;
     Array.from(inputRequired).reverse().forEach((input) => {
       if (input.value.trim() || input.hasAttribute('disabled')) {
         setSuccessFor(input);
       } else {
+        flag = false;
         setErrorFor(input);
         const formControl = input.parentElement;
         formControl.scrollIntoView({behavior: 'smooth', block: 'start'});
       }
     });
+    return flag;
   }
 
   function setErrorFor (input, message) {
     const formControl = input.parentElement;
     formControl.className = 'form-control error';
     const error = formControl.querySelector('.form-error');
-
     if (message) {
       error.innerHTML = message;
     }
